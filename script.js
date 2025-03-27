@@ -52,7 +52,7 @@ function takeCommand(message) {
         speak("Hello Sir, what can I help you with?");
     }
     else if (message.includes("who are you")) {
-        speak("I am Shifra, your personal virtual assistant created by Prayash Thakur.");
+        speak("I am Priyanshu's Assistant, your personal virtual assistant created by Prayash Thakur.");
     }
     else if (message.includes("open youtube")) {
         speak("Opening YouTube...");
@@ -86,9 +86,9 @@ function takeCommand(message) {
         tellJoke();
     }
     else {
-        let finalText = "I found this on the internet regarding " + message.replace("shifra", "") || message.replace("shipra", "");
+        let finalText = "I found this on the internet regarding " + message.replace("PriyanshuAssistant", "") || message.replace("PriyanshuAssistant", "");
         speak(finalText);
-        window.open(`https://www.google.com/search?q=${message.replace("shifra", "")}`, "_blank");
+        window.open(`https://www.google.com/search?q=${message.replace("PriyanshuAssistant", "")}`, "_blank");
     }
 }
 
