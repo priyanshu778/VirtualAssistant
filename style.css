@@ -1,0 +1,114 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container to center the content */
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on the container */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Logo Image */
+#logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Title styling */
+h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Styling the name and virtual assistant text */
+#name {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#va {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Voice Icon styling */
+#voice {
+    width: 60px;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+/* Button Styling */
+#btn {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+#btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#btn span {
+    font-weight: 600;
+}
+
+/* Animation for the voice icon */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
